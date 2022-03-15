@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entitati>
+    <student ID="2">
+        <Nume>Bianca</Nume>
+        <Grupa>924</Grupa>
+    </student>
+    <student ID="145">
+        <Nume>nghgf</Nume>
+        <Grupa>345</Grupa>
+    </student>
+    <student ID="3">
+        <Nume>bla</Nume>
+        <Grupa>342</Grupa>
+    </student>
+    <student ID="4">
+        <Nume>Ion</Nume>
+        <Grupa>227</Grupa>
+    </student>
+</Entitati>
