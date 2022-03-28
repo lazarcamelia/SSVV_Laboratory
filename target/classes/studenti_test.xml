@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entitati>
+    <student ID="1">
+        <Nume>Popescu Georgeta</Nume>
+        <Grupa>120</Grupa>
+    </student>
     <student ID="2">
         <Nume>Bianca</Nume>
         <Grupa>924</Grupa>
@@ -16,8 +20,8 @@
         <Nume>Ion</Nume>
         <Grupa>227</Grupa>
     </student>
-    <student ID="1000">
+    <student ID="1001">
         <Nume>Popescu Georgeta</Nume>
-        <Grupa>934</Grupa>
+        <Grupa>932</Grupa>
     </student>
 </Entitati>
