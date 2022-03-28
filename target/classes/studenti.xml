@@ -8,6 +8,10 @@
         <Nume>nghgf</Nume>
         <Grupa>345</Grupa>
     </student>
+    <student ID="123">
+        <Nume>nume</Nume>
+        <Grupa>923</Grupa>
+    </student>
     <student ID="3">
         <Nume>bla</Nume>
         <Grupa>342</Grupa>
@@ -15,5 +19,9 @@
     <student ID="4">
         <Nume>Ion</Nume>
         <Grupa>227</Grupa>
+    </student>
+    <student ID="-1000">
+        <Nume>dhedjehd</Nume>
+        <Grupa>235</Grupa>
     </student>
 </Entitati>
