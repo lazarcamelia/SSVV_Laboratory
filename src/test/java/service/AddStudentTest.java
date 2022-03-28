@@ -17,6 +17,7 @@ public class AddStudentTest {
 
     @Test
     public void tc_1_addStudent_whenValidInput_ShouldAddStudent() {
+        service.deleteStudent("1000");
         assertTrue(service.saveStudent("1000", "Popescu Georgeta", 934)==1);
     }
 
