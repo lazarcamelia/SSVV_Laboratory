@@ -24,7 +24,7 @@ public class AddAssignmentTest {
     }
 
     @Test
-    public void tc_01_saveTema_tryBlockRepo_catchBlockForInvalidId() {
+    public void tc_02_saveTema_tryBlockRepo_catchBlockForInvalidId() {
         Exception exception = assertThrows(ValidationException.class, () -> {
             service.saveTema("", "tema1", 8, 6);
         });
@@ -36,19 +36,7 @@ public class AddAssignmentTest {
     }
 
     @Test
-    public void tc_03_saveTema_tryBlockRepo_catchBlockForNullId() {
-        Exception exception = assertThrows(ValidationException.class, () -> {
-            service.saveTema(null, "tema1", 8, 6);
-        });
-
-        String expectedMessage = "ID invalid!";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
-    public void tc_04_saveTema_tryBlockRepo_catchBlockInvalidDescription() {
+    public void tc_03_saveTema_tryBlockRepo_catchBlockInvalidDescription() {
         Exception exception = assertThrows(ValidationException.class, () -> {
             service.saveTema("1", "", 8, 6);
         });
@@ -60,43 +48,7 @@ public class AddAssignmentTest {
     }
 
     @Test
-    public void tc_05_saveTema_tryBlockRepo_catchBlockForNullId() {
-        Exception exception = assertThrows(ValidationException.class, () -> {
-            service.saveTema("1", null, 8, 6);
-        });
-
-        String expectedMessage = "Descriere invalida!";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
-    public void tc_06_saveTema_tryBlockRepo_catchBlockForNegativeDeadline() {
-        Exception exception = assertThrows(ValidationException.class, () -> {
-            service.saveTema("1", "tema1", -1, 6);
-        });
-
-        String expectedMessage = "Deadline invalid!";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
-    public void tc_07_saveTema_tryBlockRepo_catchBlockForDeadlineTooBig() {
-        Exception exception = assertThrows(ValidationException.class, () -> {
-            service.saveTema("1", "tema1", 15, 6);
-        });
-
-        String expectedMessage = "Deadline invalid!";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
-    public void tc_08_saveTema_tryBlockRepo_catchBlockForDeadlineBeforeStartLine() {
+    public void tc_04_saveTema_tryBlockRepo_catchBlockForDeadlineBeforeStartLine() {
         Exception exception = assertThrows(ValidationException.class, () -> {
             service.saveTema("1", "tema1", 6, 7);
         });
@@ -108,7 +60,7 @@ public class AddAssignmentTest {
     }
 
     @Test
-    public void tc_09_saveTema_tryBlockRepo_catchBlockForNegativeStartline() {
+    public void tc_05_saveTema_tryBlockRepo_catchBlockForNegativeStartline() {
         Exception exception = assertThrows(ValidationException.class, () -> {
             service.saveTema("1", "tema1", 6, 0);
         });
