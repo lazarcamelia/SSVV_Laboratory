@@ -70,4 +70,9 @@ public class AddAssignmentTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
+
+    @Test
+    public void tc_06_saveTema_tryBlockRepo_catchBlockForNegativeStartline() {
+        assertEquals(0, service.saveTema("2", "tema1", 8, 6));
+    }
 }
