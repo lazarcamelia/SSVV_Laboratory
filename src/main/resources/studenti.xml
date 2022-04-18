@@ -20,8 +20,8 @@
         <Nume>Ion</Nume>
         <Grupa>227</Grupa>
     </student>
-    <student ID="-1000">
-        <Nume>dhedjehd</Nume>
-        <Grupa>235</Grupa>
+    <student ID="1000">
+        <Nume>Popescu Georgeta</Nume>
+        <Grupa>934</Grupa>
     </student>
 </Entitati>
